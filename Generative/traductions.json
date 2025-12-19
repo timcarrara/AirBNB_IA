@@ -1,0 +1,58 @@
+{
+  "property_types": {
+    "Apartment": "Appartement",
+    "House": "Maison",
+    "Condominium": "Copropriété / Appartement en résidence",
+    "Loft": "Loft",
+    "Townhouse": "Maison mitoyenne / Maison de ville",
+    "Hostel": "Auberge de jeunesse",
+    "Guest suite": "Suite privée chez l'habitant",
+    "Bed & Breakfast": "Chambre d'hôtes",
+    "Bungalow": "Bungalow",
+    "Guesthouse": "Maison d'hôtes",
+    "Dorm": "Dortoir",
+    "Other": "Autre",
+    "Camper/RV": "Camping-car / Mobil-home",
+    "Villa": "Villa",
+    "Boutique hotel": "Hôtel boutique",
+    "Timeshare": "Appartement en multipropriété",
+    "In-law": "Appartement indépendant attenant à une maison",
+    "Boat": "Bateau",
+    "Serviced apartment": "Appartement hôtelier",
+    "Castle": "Château",
+    "Cabin": "Cabane / Chalet rustique",
+    "Treehouse": "Cabane dans les arbres",
+    "Tipi": "Tipi",
+    "Vacation home": "Maison de vacances",
+    "Tent": "Tente",
+    "Hut": "Hutte",
+    "Casa particular": "Casa particular (chambre chez l'habitant à Cuba)",
+    "Chalet": "Chalet",
+    "Yurt": "Yourte",
+    "Earth House": "Maison en terre / Maison troglodyte",
+    "Parking Space": "Place de parking",
+    "Train": "Train réaménagé",
+    "Cave": "Grotte / Habitat troglodyte",
+    "Lighthouse": "Phare",
+    "Island": "Île"
+  },
+  "room_types": {
+    "Entire home/apt": "Logement entier",
+    "Private room": "Chambre privée",
+    "Shared room": "Chambre partagée"
+  },
+  "bed_types": {
+    "Real Bed": "Lit classique / Lit normal",
+    "Futon": "Futon (lit japonais pliable)",
+    "Pull-out Sofa": "Canapé-lit",
+    "Couch": "Canapé",
+    "Airbed": "Matelas pneumatique"
+  },
+  "cancellation_policies": {
+    "flexible": "flexible",
+    "moderate": "modérée",
+    "strict": "stricte",
+    "super_strict_30": "super stricte (30 jours)",
+    "super_strict_60": "super stricte (60 jours)"
+  }
+}
