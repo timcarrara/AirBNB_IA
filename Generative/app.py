@@ -167,15 +167,12 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# Configuration des clés API 
-GOOGLE_API_KEY = "AIzaSyA1OsV1Nhzl2BN3I6EPrLh73CzA9G0yM6Q" 
-MISTRAL_API_KEY = "7r3AZwvNae00ToPPtXydF2mHmipF7d5i" 
+GOOGLE_API_KEY = os.getenv("GOOGLE_MAPS_API_KEY")
+MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY")
 
 gmaps = googlemaps.Client(key=GOOGLE_API_KEY)
 clientIA = Mistral(api_key=MISTRAL_API_KEY)
 
-
-# Chargement des traductions
 @st.cache_resource
 def charger_traductions():
     try:
@@ -194,8 +191,6 @@ def traduire(valeur, categorie):
     """Traduit une valeur selon sa catégorie."""
     return TRADUCTIONS.get(categorie, {}).get(valeur, valeur)
 
-
-# Chargement des données
 @st.cache_data
 def charger_donnees():
     df = pd.read_csv('Airbnb_Data.csv')
@@ -205,8 +200,6 @@ def charger_donnees():
 
 df_filtre = charger_donnees()
 
-
-# Gestion du cache pour Google Place
 def charger_cache(nom_fichier='cache_places.json'):
     if os.path.exists(nom_fichier):
         try:
